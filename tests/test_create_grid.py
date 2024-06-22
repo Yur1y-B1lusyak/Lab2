@@ -1,5 +1,5 @@
-import unittest
 from main import create_grid
+
 
 def test_create_grid(self):
     rows, cols, mine_count = 5, 5, 5

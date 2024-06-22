@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ca487a1-b41e-47a0-a533-c8b1114d88dd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_check_win.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_create_grid.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_create_grid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_reveal.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_reveal.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,7 @@
     "Python tests.Python tests in test_minesweeper.py.executor": "Run",
     "Python tests.Python tests in test_reveal.py.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.test_check_win.executor": "Run",
     "Python.test_create_grid.executor": "Run",
     "Python.test_reveal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -74,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719084245922</updated>
-      <workItem from="1719084255618" duration="1741000" />
+      <workItem from="1719084255618" duration="2085000" />
     </task>
     <servers />
   </component>
@@ -86,5 +88,6 @@
     <SUITE FILE_PATH="coverage/Lab2$test_reveal.coverage" NAME="test_reveal Coverage Results" MODIFIED="1719086015802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/Lab2$main.coverage" NAME="main Coverage Results" MODIFIED="1719084308640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Lab2$test_create_grid.coverage" NAME="test_create_grid Coverage Results" MODIFIED="1719085931904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/Lab2$test_check_win.coverage" NAME="test_check_win Coverage Results" MODIFIED="1719086211252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>
