@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: draw_grid.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="draw_grid.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               draw_grid.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="F405">
+               <span class="count sev-1">
+                  31
+               </span>
+               <strong>F405:</strong> 'pygame' may be undefined, or defined from star imports: settings
+               
+                  (and 7 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>'TILE_SIZE' may be undefined, or defined from star imports: settings (in 4 places):</p>
+               
+               <a href="draw_grid.source.html#l7">
+                  <tt><i>7</i>             <span class="n">rect</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">r</span> <span class="o">*</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">TILE_SIZE</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l7">
+                  <tt><i>7</i>             <span class="n">rect</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">r</span> <span class="o">*</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">TILE_SIZE</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'GRAY' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l9">
+                  <tt><i>9</i>                 <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">GRAY</span><span class="p">,</span> <span class="n">rect</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l9">
+                  <tt><i>9</i>                 <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">GRAY</span><span class="p">,</span> <span class="n">rect</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'screen' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l9">
+                  <tt><i>9</i>                 <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">GRAY</span><span class="p">,</span> <span class="n">rect</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'BLACK' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l11">
+                  <tt><i>11</i>                     <span class="n">text</span> <span class="o">=</span> <span class="n">FONT</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]),</span> <span class="kc">True</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'FONT' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l11">
+                  <tt><i>11</i>                     <span class="n">text</span> <span class="o">=</span> <span class="n">FONT</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">grid</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]),</span> <span class="kc">True</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'TILE_SIZE' may be undefined, or defined from star imports: settings (in 4 places):</p>
+               
+               <a href="draw_grid.source.html#l12">
+                  <tt><i>12</i>                     <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">TILE_SIZE</span> <span class="o">+</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">3</span><span class="p">,</span> <span class="n">r</span> <span class="o">*</span> <span class="n">TILE_SIZE</span> <span class="o">+</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">4</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'screen' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l12">
+                  <tt><i>12</i>                     <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">TILE_SIZE</span> <span class="o">+</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">3</span><span class="p">,</span> <span class="n">r</span> <span class="o">*</span> <span class="n">TILE_SIZE</span> <span class="o">+</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">4</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'BLACK' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l14">
+                  <tt><i>14</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">3</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'TILE_SIZE' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l14">
+                  <tt><i>14</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">3</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l14">
+                  <tt><i>14</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">3</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'screen' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l14">
+                  <tt><i>14</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">3</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'WHITE' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l16">
+                  <tt><i>16</i>                 <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">WHITE</span><span class="p">,</span> <span class="n">rect</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l16">
+                  <tt><i>16</i>                 <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">WHITE</span><span class="p">,</span> <span class="n">rect</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'screen' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l16">
+                  <tt><i>16</i>                 <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">WHITE</span><span class="p">,</span> <span class="n">rect</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'RED' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l18">
+                  <tt><i>18</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">topleft</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">bottomright</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l18">
+                  <tt><i>18</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">topleft</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">bottomright</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'screen' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l18">
+                  <tt><i>18</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">topleft</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">bottomright</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'RED' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l19">
+                  <tt><i>19</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">topright</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">bottomleft</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l19">
+                  <tt><i>19</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">topright</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">bottomleft</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'screen' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l19">
+                  <tt><i>19</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">topright</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">bottomleft</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'BLACK' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l20">
+                  <tt><i>20</i>             <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l20">
+                  <tt><i>20</i>             <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'screen' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="draw_grid.source.html#l20">
+                  <tt><i>20</i>             <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="F403">
+               <span class="count sev-1">
+                  1
+               </span>
+               <strong>F403:</strong> 'from settings import *' used; unable to detect undefined names
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="draw_grid.source.html#l1">
+                  <tt><i>1</i> <span class="kn">from</span> <span class="nn">settings</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  5
+               </span>
+               <strong>E501:</strong> line too long (82 > 79 characters)
+               
+                  (and 2 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (82 > 79 characters):</p>
+               
+               <a href="draw_grid.source.html#l7">
+                  <tt><i>7</i>             <span class="n">rect</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">r</span> <span class="o">*</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">TILE_SIZE</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (103 > 79 characters):</p>
+               
+               <a href="draw_grid.source.html#l12">
+                  <tt><i>12</i>                     <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">TILE_SIZE</span> <span class="o">+</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">3</span><span class="p">,</span> <span class="n">r</span> <span class="o">*</span> <span class="n">TILE_SIZE</span> <span class="o">+</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">4</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (82 > 79 characters):</p>
+               
+               <a href="draw_grid.source.html#l14">
+                  <tt><i>14</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="n">TILE_SIZE</span> <span class="o">//</span> <span class="mi">3</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (84 > 79 characters):</p>
+               
+               <a href="draw_grid.source.html#l18">
+                  <tt><i>18</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">topleft</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">bottomright</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (84 > 79 characters):</p>
+               
+               <a href="draw_grid.source.html#l19">
+                  <tt><i>19</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">RED</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">topright</span><span class="p">,</span> <span class="n">rect</span><span class="o">.</span><span class="n">bottomleft</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="draw_grid.source.html#l4">
+                  <tt><i>4</i> <span class="k">def</span> <span class="nf">draw_grid</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">revealed</span><span class="p">,</span> <span class="n">flags</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W292">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W292:</strong> no newline at end of file
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="draw_grid.source.html#l20">
+                  <tt><i>20</i>             <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>

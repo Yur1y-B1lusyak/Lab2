@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: main.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="main.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               main.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="F405">
+               <span class="count sev-1">
+                  21
+               </span>
+               <strong>F405:</strong> 'ROWS' may be undefined, or defined from star imports: settings
+               
+                  (and 6 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>'COLS' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l12">
+                  <tt><i>12</i>         <span class="n">grid</span><span class="p">,</span> <span class="n">mines</span> <span class="o">=</span> <span class="n">create_grid</span><span class="p">(</span><span class="n">ROWS</span><span class="p">,</span> <span class="n">COLS</span><span class="p">,</span> <span class="n">MINE_COUNT</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'MINE_COUNT' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l12">
+                  <tt><i>12</i>         <span class="n">grid</span><span class="p">,</span> <span class="n">mines</span> <span class="o">=</span> <span class="n">create_grid</span><span class="p">(</span><span class="n">ROWS</span><span class="p">,</span> <span class="n">COLS</span><span class="p">,</span> <span class="n">MINE_COUNT</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'ROWS' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l12">
+                  <tt><i>12</i>         <span class="n">grid</span><span class="p">,</span> <span class="n">mines</span> <span class="o">=</span> <span class="n">create_grid</span><span class="p">(</span><span class="n">ROWS</span><span class="p">,</span> <span class="n">COLS</span><span class="p">,</span> <span class="n">MINE_COUNT</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'COLS' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l13">
+                  <tt><i>13</i>         <span class="n">revealed</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">COLS</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ROWS</span><span class="p">)]</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'ROWS' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l13">
+                  <tt><i>13</i>         <span class="n">revealed</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">COLS</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ROWS</span><span class="p">)]</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'COLS' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l14">
+                  <tt><i>14</i>         <span class="n">flags</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">COLS</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ROWS</span><span class="p">)]</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'ROWS' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l14">
+                  <tt><i>14</i>         <span class="n">flags</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">COLS</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ROWS</span><span class="p">)]</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l19">
+                  <tt><i>19</i>             <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l20">
+                  <tt><i>20</i>                 <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">QUIT</span><span class="p">:</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l21">
+                  <tt><i>21</i>                     <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l23">
+                  <tt><i>23</i>                 <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">MOUSEBUTTONDOWN</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">game_over</span><span class="p">:</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'TILE_SIZE' may be undefined, or defined from star imports: settings (in 2 places):</p>
+               
+               <a href="main.source.html#l25">
+                  <tt><i>25</i>                     <span class="n">r</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">y</span> <span class="o">//</span> <span class="n">TILE_SIZE</span><span class="p">,</span> <span class="n">x</span> <span class="o">//</span> <span class="n">TILE_SIZE</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'WHITE' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l39">
+                  <tt><i>39</i>             <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">WHITE</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'screen' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l39">
+                  <tt><i>39</i>             <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">WHITE</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l48">
+                  <tt><i>48</i>                 <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l51">
+                  <tt><i>51</i>                     <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l52">
+                  <tt><i>52</i>                         <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">QUIT</span><span class="p">:</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l53">
+                  <tt><i>53</i>                             <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l55">
+                  <tt><i>55</i>                         <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">MOUSEBUTTONDOWN</span><span class="p">:</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'pygame' may be undefined, or defined from star imports: settings:</p>
+               
+               <a href="main.source.html#l63">
+                  <tt><i>63</i>             <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="F403">
+               <span class="count sev-1">
+                  1
+               </span>
+               <strong>F403:</strong> 'from settings import *' used; unable to detect undefined names
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="main.source.html#l2">
+                  <tt><i>2</i> <span class="kn">from</span> <span class="nn">settings</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="main.source.html#l10">
+                  <tt><i>10</i> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E305">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E305:</strong> expected 2 blank lines after class or function definition, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="main.source.html#l65">
+                  <tt><i>65</i> <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
